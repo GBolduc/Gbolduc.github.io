@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<style>
+.blue-background{
+background-color: #0e3b84;}
+
+.yellow-font{
+color: #e9ed21;
+font-family: Algerian Regular;}
+
+.yellow-font-arial{
+color: #e9ed21;
+font-family: Arial;}	
+
+
+.black-background{
+background-color: black;}
+
+.small-image{
+	width: 100px;
+	height:100px;
+	vertical-align: middle;
+}
+
+.small-image:hover{
+	width: 200px;
+	height: 200px;
+}
+
+.medium-image{
+	width: 300px;
+	height: 300px;
+	vertical-align: top;
+}
+}
+.menu-items-text{
+
+	color: white;
+	font-size: 20px;
+}
+
+.form-margin{
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+  
+  #wrapper {
+    width:760px;
+    margin:0 auto;
+    text-align:center;
+    padding-top:50px;
+  }
+  
+  
+  ul#index_cards {
+    margin-top:50px;
+    text-align:center;
+  }
+  
+    ul#index_cards li {
+      background:url(CrowStationary.jpg) repeat;
+      height:300px;
+      width:290px;
+      display:block;
+      float:left;
+      border:1px solid #666;
+      padding:50px 10px;
+      position:relative;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-box-shadow: 2px 2px 10px #000;
+      -webkit-box-shadow: 2px 2px 10px #000;
+      -moz-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+    }
+  
+  
+  ul#index_cards li:hover {
+    z-index:4;
+  }
+  
+  #card-1:hover {
+    -moz-transform: scale(1.1) rotate(-18deg);
+      -webkit-transform: scale(1.1) rotate(-18deg); 
+  }
+    
+  #card-2:hover {
+    -moz-transform: scale(1.1) rotate(-8deg);
+      -webkit-transform: scale(1.1) rotate(-8deg); 
+  }
+  
+  #card-3:hover {
+    -moz-transform: scale(1.1) rotate(2deg);
+      -webkit-transform: scale(1.1) rotate(2deg); 
+  }
+  
+  #card-4:hover {
+    -moz-transform: scale(1.1) rotate(12deg);
+      -webkit-transform: scale(1.1) rotate(12deg); 
+  }
+  
+  #card-5:hover {
+    -moz-transform: scale(1.1) rotate(22deg);
+      -webkit-transform: scale(1.1) rotate(22deg); 
+  }
+  
+  /* Content Styling */
+  
+      ul#index_cards li img {
+        margin-top:7px;
+        background:#eee;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-box-shadow: 0px 0px 5px #aaa;
+        -webkit-box-shadow: 0px 0px 5px #aaa;
+      }
+      
+      ul#index_cards li p {
+        margin-top:4px;
+        text-align:left;
+        line-height:18px; 
+      }
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+</style>
+
+<head>
+<title>University of British CROWlumbia</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="functions.js">
+        </script>
+</head>
+<body class="black-background">
+
+<h1 class="blue-background yellow-font"><center>University of British CROWlumbia</h1></center>
+
+<h2 class="blue-background yellow-font-arial"><center>Currently Enrolled Crows</center>
+</h2>
+ <div id="wrapper">
+        <ul id="index_cards">
+            <li id="card-1">
+                <h3>SHARON</h3>
+                <img src="Sharon.jpg" height="130" width="130" alt="Sharon" />
+                <p>Name: Sharon<br />
+                Spotted: Allison Rd/Toronto St
+                Major: Enjoying the sunshine</p>
+            </li>
+            <li id="card-2">
+                <h3>SHERYL</h3>
+                <img src="Sheryl.jpg" height="130" width="130" alt="Sheryl" />
+                <p>Name: Sheryl<br />
+                Spotted: University/Westbrooke
+                Major: Eating Peanuts</p>
+            </li>
+            <li id="card-3">
+                <h3>ALLY MCBEAL</h3>
+                <img src="AllyMcBeal.jpg" height="130" width="130" alt="Ally the crow" />
+                <p>Name: Ally McBeal<br />
+                Spotted: Allan Hall <br/>
+                Major: Legal Caws</p>
+            </li>
+            <li id="card-4">
+                <h3>COREY & CORENLIUS </h3>
+                <img src="CoreyCornelius.jpg" height="130" width="130" alt="Corey Cornelius Crows" />
+                <p>Name: Corey & Cornelius <br />
+                Spotted: Main Mall <br/>
+                Major: Surveillance </p>
+            </li>
+            <li id="card-5">
+                <h3>GILLES</h3>
+                <img src="Gilles.jpg" alt="Gilles the crow" height="130" width="130" alt="Gilles the crow" />
+                <p>Name: Corey & Cornelius <br />
+                Spotted: By Koerner's Library <br/>
+                Major: Flapping </p>
+            </li>
+
+            <li>
+                <form action="Submission.html">
+    <label for="cname">Crow Name</label>
+    <input type="text" id="cname" name="CrowName" placeholder="Name Your Crow!" required="">
+
+    <label for="clocation">Crow Location</label>
+    <input type="text" id="clocation" name="Crow Location" placeholder="Where was the crow?" required="">
+
+    <label for="Major">Major</label>
+    <input type="text" id="Major" name="Major" placeholder="What does the crow study?" required="">
+
+<div>
+  <input type="file" name="myfile" />
+</div>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+        </ul>
+    </div>
+  </li>
+
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<style>
+.blue-background{
+background-color: #0e3b84;}
+
+.yellow-font{
+color: #e9ed21;
+font-family: Algerian Regular;}
+
+.yellow-font-sans{
+color: #e9ed21;
+font-family: sans-serif;
+font-size: 25px;
+text-align: center;
+margin-top: 100px;
+}
+
+.black-background{
+background-color: black}
+
+.small-image{
+	width: 100px;
+	height:100px;
+	vertical-align: middle;
+}
+.small-image:hover{
+	width: 150px;
+	height: 150px;
+}
+.container{
+	position: relative;
+	width: 200%;
+}
+.menu-items-text{
+
+	color: white;
+	font-size: 20px;
+	font-family: Cooper Black;
+}
+.overlay{
+	position: absolute;
+	top:5;
+	bottom:5;
+	left:30;
+	right:0;
+	transition: .5ease;
+
+.container:hover .overlay{
+	opacity:1;
+}
+
+</style>
+
+<head>
+<title>University of British CROWlumbia</title>
+</head>
+<body class ="black-background" class="yellow-font-sans" ;>
+
+<h1 class="blue-background yellow-font"><center>University of British CROWlumbia</center> </h1>
+
+<audio id="CrowSounds">
+  <source src="CrowSound.ogg" type="audio/ogg">
+  <source src="CrowSound.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="Sheryl">
+  <source src="Sheryl.ogg" type="audio/ogg">
+  <source src="Sheryl.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p>Click the buttons to play or pause the audio.</p>
+
+<button onclick="playAudio()" type="button">Hear Crow</button>
+<button onclick="pauseAudio()" type="button">Pause Crow</button> 
+<button onclick="playDiffAudio()" type="button">Hear Different Crow</button>
+<button onclick="pauseDiffAudio()" type="button">Pause Different Crow</button>
+<script>
+var x = document.getElementById("CrowSounds"); 
+var y = document.getElementById("Sheryl")
+
+function playAudio() { 
+    x.play(); 
+} 
+
+function pauseAudio() { 
+    x.pause(); 
+} 
+
+function playDiffAudio(){
+	y.play();
+}
+
+function pauseDiffAudio(){
+	y.pause();
+}
+</script>
+
+<br/>
+<br/>
+
+<img src ="Caws.jpg" alt"crow meme">
+
+</body>
+</html>
